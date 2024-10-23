@@ -17,9 +17,9 @@ int main()
         int trunk_width = stars / 4;
         int trunk_height = stars / 5;
             for (int trunk = 0; trunk < trunk_height; trunk++) {
-            for (int space = 0; space < stars - trunk_width - 1; space++)
+            for (int space = 0; space < stars - trunk_width; space++)
                 cout << " ";
-            for (int width = 0; width < trunk_width * 2 + 1; width++)
+            for (int width = 0; width < trunk_width * 2; width++)
                 cout << "|";
             cout << endl;
         }
