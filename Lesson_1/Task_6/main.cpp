@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include<windows.h>  // бібліотека для команди затримки "Sleep()"
+#include<windows.h>  // library for "Sleep()" delay command
 using namespace std;
 
 int main()
@@ -9,17 +9,17 @@ int main()
     cout << "Entered height triangle: --> " << endl;
     cin >> height;
     for (int circle = 0; circle <= 8; circle++) {
-    system("cls"); // Очистка консолі
-    for (int a = 1; a <= height; a++) {   // Трикутник
+    system("cls"); // Clear console
+    for (int a = 1; a <= height; a++) {   // Triаngle
         for (int b = 1; b <= a; b++) {
             cout << "*";
         }
         cout << endl;
     }
 
-    Sleep(200);   // Затримка консолі
+    Sleep(200);   // console delay
     system("cls");
-    for (int a = height; a >= 1; a--) {  // -Трикутник
+    for (int a = height; a >= 1; a--) {  // -Triangle
         for (int b = 1; b <= a; b++) {
             cout << "*";
         }
@@ -28,7 +28,7 @@ int main()
 
     Sleep(200);
     system("cls");
-    for (int a = 1; a <= height; a++) {        //Трикутник перевернутий на 90 градусів
+    for (int a = 1; a <= height; a++) {        //Triangle rotation on П/2
         for (int b = 1; b <= height; b++) {
             if (b < height - a + 1)
                 cout << " ";
@@ -39,7 +39,7 @@ int main()
 
     Sleep(200);
     system("cls");
-    for (int a = height; a >= 1; a--) {       //Трикутник повернутий на 270
+    for (int a = height; a >= 1; a--) {       //Triangle rotation on 3П/2
         for (int b = 1; b <= height; b++) {
             if (b < height - a + 1)
                 cout << " ";
