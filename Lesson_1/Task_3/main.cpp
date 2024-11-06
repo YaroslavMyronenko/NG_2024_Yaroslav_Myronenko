@@ -5,49 +5,49 @@ using namespace std;
 int main()
 {
     cout << "Calculate" << endl;
-    int a, b;
-    char c;
+    int num1, num2;
+    char action;
     cout << "enter first num: ";
-    cin >> a;
+    cin >> num1;
     cout << "enter action (+-*/): ";
-    cin >> c;
+    cin >> action;
     cout <<"enter second num: ";
-    cin >> b;
+    cin >> num2;
 
-    switch (c) {
+    switch (action) {
     case '+':
     {
-        cout << a << " + " << b << " = " << a+b << endl;
+        cout << num1 << " + " << num2 << " = " << num1+num2 << endl;
         break;
     }
     case '-':
     {
-        cout << a << " - "<< b << " = " << a-b << endl;
+        cout << num1 << " - "<< num2 << " = " << num1-num2 << endl;
         break;
     }
     case '*':
     {
-        cout << a << " * "<< b << " = " << a*b << endl;
+        cout << num1 << " * "<< num2 << " = " << num1*num2 << endl;
         break;
     }
     case '/':
     {
-        if (b == 0)
+        if (num2 == 0)
         {
             cout << "You cannot divide by zero";
             break;
         }
-        cout << a << " / " << b <<" = "<< a / b << endl;
+        cout << num1 << " / " << num2 <<" = "<< num1 / num2 << endl;
         break;
     }
     case '%':
     {
-        if (b == 0)
+        if (num2 == 0)
         {
             cout << "You cannot divide by zero";
             break;
         }
-        cout << a << " % " << b <<" = "<< a % b << endl;
+        cout << num1 << " % " << num2 <<" = "<< num1 % num2 << endl;
         break;
     }
     default:
