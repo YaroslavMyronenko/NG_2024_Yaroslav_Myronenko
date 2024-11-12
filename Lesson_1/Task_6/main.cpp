@@ -9,47 +9,47 @@ int main()
     cout << "Entered height triangle: --> " << endl;
     cin >> height;
     for (int circle = 0; circle <= 8; circle++) {
-    system("cls"); // Clear console
-    for (int a = 1; a <= height; a++) {   // Triаngle
-        for (int b = 1; b <= a; b++) {
-            cout << "*";
+        system("cls"); // Clear console
+        for (int sideA = 1; sideA <= height; sideA++) {   // Triаngle
+            for (int sideB = 1; sideB <= sideA; sideB++) {
+                cout << "*";
+            }
+            cout << endl;
         }
-        cout << endl;
-    }
 
-    Sleep(200);   // console delay
-    system("cls");
-    for (int a = height; a >= 1; a--) {  // -Triangle
-        for (int b = 1; b <= a; b++) {
-            cout << "*";
+        Sleep(200);   // console delay
+        system("cls");
+        for (int sideA = height; sideA >= 1; sideA--) {  // -Triangle
+            for (int sideB = 1; sideB <= sideA; sideB++) {
+                cout << "*";
+            }
+            cout << endl;
         }
-        cout << endl;
-    }
 
-    Sleep(200);
-    system("cls");
-    for (int a = 1; a <= height; a++) {        //Triangle rotation on П/2
-        for (int b = 1; b <= height; b++) {
-            if (b < height - a + 1)
-                cout << " ";
-            else cout << "*";
+        Sleep(200);
+        system("cls");
+        for (int sideA = 1; sideA <= height; sideA++) {        //Triangle rotation on П/2
+            for (int sideB = 1; sideB <= height; sideB++) {
+                if (sideB < height - sideA + 1)
+                    cout << " ";
+                else cout << "*";
+            }
+            cout << endl;
         }
-        cout << endl;
-    }
 
-    Sleep(200);
-    system("cls");
-    for (int a = height; a >= 1; a--) {       //Triangle rotation on 3П/2
-        for (int b = 1; b <= height; b++) {
-            if (b < height - a + 1)
-                cout << " ";
-            else cout << "*";
+        Sleep(200);
+        system("cls");
+        for (int sideA = height; sideA >= 1; sideA--) {       //Triangle rotation on 3П/2
+            for (int sideB = 1; sideB <= height; sideB++) {
+                if (sideB < height - sideA + 1)
+                    cout << " ";
+                else cout << "*";
+            }
+            cout << endl;
         }
-        cout << endl;
-    }
 
-    Sleep(200);
-    system("cls");
+        Sleep(200);
+        system("cls");
     }
     return 0;
 }
