@@ -5,14 +5,13 @@ int main() {
     int salary = 0;
     cout << "Vasha Zarplata:-->" << endl;
     cin >> salary;
-    if (salary < 1000) {
-        cout << "Rabotay bolshe" << endl;
-        return 0;
+    if (salary < 1000000){
+        if (salary > 1000){
+            cout << "Tu molodec";}
     }
-    if (salary < 1000000) {
-        cout << "Tu Molodec" << endl;
-        return 0;
+    if (salary < 1000){
+        cout << "Rabotay bolshe";}
+    if (salary > 1000000){
+        cout << "Tu Milioner";
     }
-    cout << "We Milioner" << endl;
-    return 0;
 }
